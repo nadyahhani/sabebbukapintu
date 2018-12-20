@@ -1,0 +1,133 @@
+@font-face {
+    font-family: SF-Pro-Display;
+    src: url("SF-Pro-Display-Light.otf") format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: SF-Pro-Display;
+    src: url("SF-Pro-Display-Medium.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: SF-Pro-Display;
+    src: url("SF-Pro-Display-Thin.otf") format("opentype");
+    font-weight: lighter;
+}
+
+*{
+  font-family: SF-Pro-Display;
+
+}
+h1{
+  font-size: 40px;
+  font-weight: normal;
+}
+h2{
+  font-weight: bold;
+  margin-top: -5px;
+}
+h3{
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-top: -5px;
+
+}
+.button{
+  background-color: #6AA8FF;
+  padding: 7px 30px 7px 30px;
+  width : auto;
+  color : white;
+  font-size: 20px;
+  border: 0px solid #6AA8FF;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+  padding: 0 10% 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+img{
+  height: auto;
+  max-width: 30%;
+  overflow:hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.OK{
+  padding: 5% 30% 10% 30%;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  vertical-align: middle;
+  justify-content: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 0px solid #888;
+  border-radius: 20px;
+  width: 20%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+}
+
+/* The Close Button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 2.3em;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+
+  .image{
+    padding: 10%;
+  }
+  img{
+    height: auto;
+    max-width: 100%;
+    overflow:hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 0px solid #888;
+    border-radius: 20px;
+    width: 55%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
+  }
+}

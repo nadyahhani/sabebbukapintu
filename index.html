@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Buka Pintu">
+    <meta name="author" content="Sabeb">
+    <link rel="stylesheet" type="text/css" href="static/index.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Sabeb Buka Pintu</title>
+</head>
+
+<body>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>Your Door Is Open!</h3>
+    <div class="OK">
+      <img src="static/Ok.png">
+    </div>
+  </div>
+</div>
+<h1>Sabeb Buka Pintu</h2>
+<h2>by SabebAjaGasi</h2>
+<div class="image">
+  <img class="mbak" src="static/MbakMbake.png">
+</div>
+<a class="button" onclick="openModal()">Open</a>
+
+</body>
+<script>
+var modal = document.getElementById('modal');
+
+function openModal(){
+  modal.style.display = "flex";
+}
+function closeModal(){
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
